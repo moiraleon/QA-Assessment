@@ -7,8 +7,14 @@ app.get('/',function(req,res) {
   res.sendFile(path.join(__dirname, '../tictacjs.html'));
 });
 
+// function yowza {
+//   alert('yowza')
+// }
+// document.getElementById('doggo').onmouseover
+
 const port = process.env.PORT || 4000
 
 app.listen(port, () => {
   console.log(`Listening on port ${port}`)
 })
+
