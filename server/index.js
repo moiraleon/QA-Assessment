@@ -7,11 +7,11 @@ app.get('/',function(req,res) {
   res.sendFile(path.join(__dirname, '../tictacjs.html'));
 });
 
-function spaceCompliment() {
-  alert("yowza")
-}
+// function spaceCompliment() {
+//   alert("yowza")
+// }
 
-document.getElementById("doggo").addEventListener("mouseover", spaceCompliment);
+// document.getElementById("doggo").addEventListener("mouseover", spaceCompliment);
 // document.getElementById('doggo').onmouseover
 
 // var id = null;
@@ -34,6 +34,7 @@ document.getElementById("doggo").addEventListener("mouseover", spaceCompliment);
 const port = process.env.PORT || 4000
 
 app.listen(port, () => {
-  console.log(`Listening on port ${port}`)
+  console.log(`Listening on port ${port}`,
+  this.address().port, app.settings.env)
 })
 
